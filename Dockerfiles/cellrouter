@@ -1,0 +1,13 @@
+FROM r-base:3.4.0
+
+RUN apt-get -yqq update
+RUN apt-get -yqq install openjdk-8-jdk
+
+RUN echo 'JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> /etc/environment
+RUN /bin/bash -c 'source /etc/environment'
+
+RUN R CMD javareconf
+
+RUN R -e "install.packages(c('reshape','reshape2','pheatmap','tsne','igraph','ggplot2','mclust','grid','Rtsne','cccd'))"
+RUN R -e "source('http://bioconductor.org/biocLite.R'); biocLite(c('graph', 'RBGL', 'RColorBrewer', 'gtools'))"
+RUN R -e "install.packages('Vennerable', repos='http://R-Forge.R-project.org')"

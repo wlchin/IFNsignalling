@@ -1,0 +1,11 @@
+
+
+rule all:
+    input:
+        pass
+
+include: "workflow/rules/file_downloads.smk"
+include: "workflow/rules/alignment_and_DE.smk" 
+include: "workflow/rules/network_creation.smk" 
+include: "workflow/rules/interferon_analysis.smk"
+include: "workflow/rules/figure_creation.smk"
