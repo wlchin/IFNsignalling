@@ -12,3 +12,5 @@ The repository also contains java libraries from the *[CellRouter](https://githu
 ### References
 
 1. Griffiths JI, Wallet P, Pflieger LT, et al. Circulating immune cell phenotype dynamics reflect the strength of tumor-immune cell interactions in patients during immunotherapy. Proc Natl Acad Sci U S A. 2020;117(27):16072-16082. doi:10.1073/pnas.1918937117
+
+2. Lummertz da Rocha E, Rowe RG, Lundin V, et al. Reconstruction of complex single-cell trajectories using CellRouter. Nat Commun. 2018;9(1):892. Published 2018 Mar 1. doi:10.1038/s41467-018-03214-y
