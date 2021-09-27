@@ -1,9 +1,0 @@
-
-rule all:
-    input:
-        "benchmarks/seurat_workflow_summary.txt"
-
-include: "rules/seurat_analysis.smk"
-include: "rules/download_data.smk"
-include: "rules/SCENIC.smk"
-include: "rules/scde_abbr.smk"
