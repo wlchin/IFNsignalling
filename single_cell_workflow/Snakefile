@@ -12,7 +12,6 @@ include: "workflow/rules/file_download.smk"
 include: "workflow/rules/preprocess_samples.smk",
 include: "workflow/rules/ab1_tumour.smk",
 include: "workflow/rules/renca_tumour.smk",
-include: "workflow/rules/cellrouter.smk",
 include: "workflow/rules/velocyto.smk",
 include: "workflow/rules/scde.smk",
 include: "workflow/rules/phenopath.smk",
